@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build Website
-        working-directory: ./my-gatsby-site
         run: |
           npm install
           npm build
