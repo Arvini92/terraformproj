@@ -12,7 +12,7 @@ jobs:
       - name: Build Website
         run: |
           cd my-gatsby-site
-          ls
+          ls .
       - name: Configure AWS credentials
         if: github.event_name == 'push'
         uses: aws-actions/configure-aws-credentials@v1
