@@ -22,4 +22,4 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Deploy to S3
         if: github.event_name == 'push'
-        run: aws s3 sync dist s3://${{ secrets.AWS_BUCKET_NAME }} --delete
+        run: aws s3 sync dist/my-app s3://${{ secrets.AWS_BUCKET_NAME }} --delete
