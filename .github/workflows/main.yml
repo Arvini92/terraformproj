@@ -12,6 +12,7 @@ jobs:
       - name: Build Website
         run: |
           npm install
+          npm run test
           npm run build
       - name: Configure AWS credentials
         if: github.event_name == 'push'
